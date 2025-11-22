@@ -1,54 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Portfolio</title>
-
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sugam Katuwal — Portfolio</title>
+<link rel="icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="#">Sugam Katuwal</a>
+<nav class="nav">
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<button class="menu-toggle" aria-expanded="false">☰</button>
+</div>
+</header>
 
-    <header>
-        <h1>My Portfolio</h1>
-        <p>Welcome to my personal website</p>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<main>
+<section id="hero" class="hero">
+<div class="container hero-inner">
+<div class="hero-text">
+<h1>Hi, I’m <span class="accent">Sugam Katuwal</span></h1>
+<p>Computer Science student • Developer • Problem-solver</p>
+<p class="cta-row"><a class="btn" href="#projects">See my work</a> <a class="btn ghost" href="#contact">Contact me</a></p>
+</div>
+<div class="hero-photo">
+<img src="/images/profile.jpg" alt="Your Name profile photo">
+</div>
+</div>
+</section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This is the about section. Write something about yourself here.</p>
-    </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Write about your projects here.</p>
-    </section>
+<section id="about" class="about container">
+<h2>About</h2>
+<p>Hi! I'm Sugam Katuwal. I am passonate on Codding, Business, Soccer and reading. I'm currently studying BIT on Herald College</p>
+<ul class="skills">
+<li>Languages: HTML, CSS, JavaScript, Python</li>
+<li>Tools: Git, GitHub, VS Code</li>
+<li>Interests: Web dev, ML, Open-source</li>
+</ul>
+</section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
 
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+<section id="projects" class="projects container">
+<h2>Projects</h2>
+<div class="project-grid">
+<article class="project-card">
+<img src="/images/project1.png" alt="Project 1 screenshot">
+<h3>Project 1 — Portfolio Workshop</h3>
+<p>Short description: Built with HTML & CSS. Link to repo or demo.</p>
+<p class="project-links"><a href="#" target="_blank">Repo</a> · <a href="#" target="_blank">Live</a></p>
+</article>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+<!-- Duplicate project-card for more projects -->
 
-            <button type="submit">Submit</button>
-        </form>
 
-    </section>
+</div>
+</section>
 
-</body>
+
+<section id="contact" class="contact container">
+<h2>Contact: 9823024409/h2>
+<form action="#" method="POST" class="contact-form" novalidate>
+<label for="name">Name: Sugam Katuwal</label>
+<input id="name" name="name" type="text" required>
+
+
+<label for="email">Email: sugamkatuwal69@gmail.com</label>
+<input id="email" name="email" type="email" required>
 </html>
